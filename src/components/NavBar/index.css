@@ -1,0 +1,30 @@
+.nav-bg-container {
+  background-image: linear-gradient(to right, #9796f0, #fbc7d4);
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+}
+.logo-name-container {
+  display: flex;
+}
+.scores-container {
+  display: flex;
+}
+.logo {
+  height: 50px;
+  width: 50px;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+.logo-name {
+  color: white;
+  font-size: 25px;
+  text-align: center;
+}
+.score {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  margin-right: 20px;
+  margin-left: 40px;
+}
