@@ -1,19 +1,25 @@
 import './index.css'
 
-const NavBar = () => (
-  <div className="nav-bg-container">
-    <div className="logo-name-container">
-      <img
-        src="https://assets.ccbp.in/frontend/react-js/game-logo-img.png"
-        alt="emoji logo"
-        className="logo"
-      />
-      <h1 className="logo-name">Emoji Game</h1>
+const NavBar = props => {
+  const {currScore, topScore, isGameEnd} = props
+  if (isGameEnd) {
+    return null
+  }
+  return (
+    <div className="nav-bg-container">
+      <div className="logo-name-container">
+        <img
+          src="https://assets.ccbp.in/frontend/react-js/game-logo-img.png"
+          alt="emoji logo"
+          className="logo"
+        />
+        <h1 className="logo-name">Emoji Game</h1>
+      </div>
+      <nav className="scores-container">
+        <p className="score">Score: {currScore}</p>
+        <p className="score">Top Score: {topScore}</p>
+      </nav>
     </div>
-    <nav className="scores-container">
-      <h1 className="score">Score:</h1>
-      <h1 className="score">Top Score:</h1>
-    </nav>
-  </div>
-)
+  )
+}
 export default NavBar

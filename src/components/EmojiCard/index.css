@@ -1,5 +1,21 @@
 .emoji-card {
-  height: 70px;
-  width: 70px;
+  min-height: 200px;
+  min-width: 200px;
   background-color: white;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  border-radius: 8px;
+  border-width: 0px;
+  background-color: #ffffff33;
+}
+.emoji-img {
+  height: 120px;
+  width: 120px;
+}
+.emoji-btn {
+  background-color: transparent;
+  border-width: 0px;
 }

@@ -1,3 +1,11 @@
 .emojis-list-container {
   list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 30px;
+  min-height: 100vh;
+  margin: auto;
+}
+.bg-container {
+  background-image: linear-gradient(to bottom right, #9796f0, #fbc7d4);
 }
